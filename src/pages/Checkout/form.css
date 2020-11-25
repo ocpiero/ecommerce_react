@@ -1,0 +1,25 @@
+.cadastro {
+  margin-bottom: 100px;
+  position: center;
+  display: flex;
+  justify-content: left;
+  border-top: 10rem;
+  border-radius: 10 10;
+}
+
+.form-address {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  height: 600px;
+  width: 500px;
+}
+
+.palmeiras {
+  background-color: green;
+  color: aliceblue;
+  position: center;
+  display: flex;
+  justify-content: center;
+  height: 57px;
+  width: 800px;
+}

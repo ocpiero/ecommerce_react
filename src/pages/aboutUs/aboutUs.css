@@ -1,0 +1,29 @@
+.infoo {
+  color: #333;
+  width: 50%;
+  background: black;
+  display: inline-block;
+  margin: 0;
+  padding: 20px;
+}
+
+.infoo h3 {
+  font-size: 1.2rem;
+  margin: 80px auto;
+}
+
+.infoo p {
+  margin: 20 auto;
+  font-size: 0.8rem;
+}
+
+.mapa {
+  display: inline-block;
+  margin-left: 100%;
+  margin-bottom: 0;
+}
+
+.aboutUs {
+  background-image: url(../../images/beijing.webp);
+  width: 100%;
+}

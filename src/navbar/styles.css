@@ -1,0 +1,21 @@
+ul.navbar {
+  display: inline-block;
+  margin: 0;
+  padding: 0px;
+  width: 100%;
+  background: #333;
+  border-radius: 5em/5em;
+  position: center;
+  display: flex;
+  justify-content: center;
+  list-style-type: disc;
+}
+
+ul.navbar li {
+  display: inline-block;
+  margin: center;
+}
+
+ul.navbar li a {
+  color: white;
+}
