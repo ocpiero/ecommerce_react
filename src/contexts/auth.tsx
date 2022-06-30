@@ -1,4 +1,4 @@
-import React, { createContext, useState, useEffect, useContext } from "react";
+import React, { createContext, useState, useEffect, useContext, ReactNode } from "react";
 import * as auth from "../services/auth";
 import api from "../services/api";
 
@@ -12,6 +12,10 @@ interface Log {
   password: string;
 }
 
+interface Props {
+    children: ReactNode;
+}
+
 interface AuthContextData {
   signed: boolean;
   user: User | null;
@@ -22,7 +26,7 @@ interface AuthContextData {
 
 const AuthContext = createContext<AuthContextData>({} as AuthContextData);
 
-export const AuthProvider: React.FC = ({ children }) => {
+export const AuthProvider: React.FC<Props> = ({ children }) => {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(false);
 
