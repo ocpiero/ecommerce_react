@@ -1,4 +1,4 @@
-import React, { createContext, useState, useContext } from "react";
+import React, { createContext, useState, useContext, ReactNode } from "react";
 import * as services from "../services/products";
 
 interface prod {
@@ -28,6 +28,10 @@ interface Pagination {
   atual: string;
 }
 
+interface Props {
+    children: ReactNode;
+}
+
 interface CartContextData {
   produtosLista: any;
   addCarrinho(produto: prod): void;
@@ -44,7 +48,7 @@ interface CartContextData {
 
 const ProductContext = createContext<CartContextData>({} as CartContextData);
 
-export const ProductProvider: React.FC = ({ children }) => {
+export const ProductProvider: React.FC<Props> = ({ children }) => {
   const [produtosLista, setProdutosLista] = useState<any | null>(null);
   const [pagina, setPagina] = useState<any | null>(null);
   const [categoria, setCategoria] = useState<string | null>("Geral");
